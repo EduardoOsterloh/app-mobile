@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fundoRelative"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:background="@drawable/backk"
+        android:text="."
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imageViewArrow00"
+        android:layout_width="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="30dp"
+        android:background="@drawable/baseline_arrow_back_ios_24"
+            />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/perfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Perfil"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnn"
+        android:layout_below="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:background="@drawable/ver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="HI $nome"/>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/btnn">
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtarroz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carboidratos"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"/>
+
+        <ImageView
+            android:id="@+id/arroz"
+            android:layout_marginLeft="30dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/arroz"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/alimento"/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtcarne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proteinas"
+            android:layout_below="@+id/arroz"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/meat"
+            android:layout_marginLeft="30dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/meat"
+            android:layout_below="@id/txtcarne"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/alimento"/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtsardinha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gorduras"
+            android:layout_alignParentEnd="true"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/sardinha"
+            android:layout_marginLeft="30dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/sardinhas"
+            android:layout_alignRight="@id/banana"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/alimento"/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtbanana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fibras"
+            android:layout_alignParentEnd="true"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:layout_below="@id/sardinha"
+            />
+
+        <ImageView
+            android:id="@+id/banana"
+            android:layout_marginLeft="30dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/banana"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txtbanana"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/alimento"/>
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

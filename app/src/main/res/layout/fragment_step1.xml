@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ativ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OBJETIVO"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_below="@+id/ativ"
+        android:background="@drawable/btnmeta"
+        android:id="@+id/buttonGanharPeso"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Ganhar Peso"
+        android:textColor="@color/white"
+        android:layout_marginBottom="80dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonManterPeso"
+        android:background="@drawable/btnmeta"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonGanharPeso"
+        android:text="Manter Peso"
+        android:layout_marginBottom="80dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonEmagrecer"
+        android:background="@drawable/btnmeta"
+        android:layout_below="@+id/buttonManterPeso"
+        android:layout_width="300dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Emagrecer" />
+
+</RelativeLayout>
+
+
+
+

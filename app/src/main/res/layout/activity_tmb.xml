@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".tmb">
+
+        <TextView
+            android:id="@+id/txttmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taxa metábolica"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <TextView
+            android:id="@+id/tmb"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="TMB"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txttmb"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btnbackground"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tmb"
+            android:id="@+id/fogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fogoo"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/txtmeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meta calórica"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fogo"
+            />
+
+        <TextView
+            android:id="@+id/txtprato"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="TMB"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtmeta"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btnbackground"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtprato"
+            android:id="@+id/prato"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/prato"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+
+        <TextView
+            android:id="@+id/txtagua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meta de água"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/prato"
+            />
+
+        <TextView
+            android:id="@+id/seilamano"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="TMB"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtagua"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btnbackground"
+            android:layout_marginTop="30dp"/>
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/seilamano"
+            android:id="@+id/imgprato"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/agua"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_perfil"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgprato"
+            android:text="Perfil"
+            android:background="@drawable/btnbackground"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"/>
+
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

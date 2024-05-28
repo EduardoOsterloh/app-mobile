@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Define a cor de fundo do layout -->
+    <solid android:color="#7D9463" />
+
+    <!-- Define as bordas -->
+    <stroke
+        android:width="5dp" /><!-- Largura da borda -->
+
+
+    <!-- Define o raio dos cantos (opcional) -->
+    <corners android:bottomLeftRadius="30dp"
+        android:topLeftRadius="0dp"
+        android:topRightRadius="0dp"
+        android:bottomRightRadius="30dp"/> <!-- Raio dos cantos -->
+
+</shape>

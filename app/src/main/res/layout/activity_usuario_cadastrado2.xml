@@ -1,0 +1,57 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <FrameLayout
+        android:id="@+id/wizardContent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:layout_marginBottom="10dp"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#8BC34A"
+        android:layout_marginTop="700dp">
+
+
+        <TextView
+            android:id="@+id/perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/prato"
+
+            />
+        <TextView
+            android:id="@+id/tmb"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/objetivo"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/alimentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="20dp"
+            android:background="@drawable/prato"
+
+            />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

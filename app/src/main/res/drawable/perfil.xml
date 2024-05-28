@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#FFFFFF" /> <!-- Define a cor de fundo do círculo -->
+    <corners android:radius="50dp"/> <!-- Metade da largura/altura -->
+</shape>
