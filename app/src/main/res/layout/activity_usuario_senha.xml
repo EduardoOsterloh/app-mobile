@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NutriBalance"
+        android:layout_marginTop="40dp"
+        android:textSize="35dp"
+        android:textColor="#8BC34A"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_email_usuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_width="140dp"
+        android:textAlignment="center"
+        android:textSize="17.5dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Nome do Usuário ou E-mail"/>
+
+    <EditText
+        android:id="@+id/input_email_usuario"
+        android:layout_below="@id/text_email_usuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:hint="E-mail ou usuário"
+        android:textAlignment="center"
+        android:ems="20"
+        android:background="@drawable/back_input"
+   />
+
+    <TextView
+        android:id="@+id/text_senha_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_email_usuario"
+        android:text="Senha"
+        android:layout_marginTop="20dp"
+        android:textSize="17.5dp"
+
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/input_senha_usuario"
+        android:layout_below="@id/text_senha_usuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Senha"
+        android:textAlignment="center"
+        android:background="@drawable/back_input"
+        android:ems="20"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnbackground"
+        android:layout_below="@id/input_senha_usuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/voltar_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Voltar"
+        android:textColor="@color/black"/>
+
+
+
+
+
+
+
+</RelativeLayout>

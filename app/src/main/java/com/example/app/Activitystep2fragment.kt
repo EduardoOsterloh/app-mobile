@@ -28,12 +28,12 @@ class Activitystep2fragment: Fragment() {
         }
         pouco.setOnClickListener{
             Toast.makeText(requireContext(), "Pouco ativoselecionado", Toast.LENGTH_SHORT).show()
-            opcaoSelecionada = "Pouco"
+            opcaoSelecionada = "Pouco ativo"
             DataHolder.conteudo2tela = opcaoSelecionada
         }
         muito.setOnClickListener{
             Toast.makeText(requireContext(), "Muito ativo selecionado", Toast.LENGTH_SHORT).show()
-            opcaoSelecionada = "Muito"
+            opcaoSelecionada = "Muito ativo"
             DataHolder.conteudo2tela = opcaoSelecionada
         }
         return view

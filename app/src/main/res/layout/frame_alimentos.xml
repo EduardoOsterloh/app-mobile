@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/Layout_calorias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diario de calorias"
+            android:layout_below="@+id/drop"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+
+        <RelativeLayout
+            android:id="@+id/card_diario"
+            android:layout_width="300dp"
+            android:layout_marginTop="200dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_background"
+            >
+
+            <TextView
+                android:id="@+id/textdiario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diário de Calorias"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="XXXXKCAL"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp">
+
+
+            <TextView
+                android:id="@+id/cafe_manha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Café da manhã"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/container_alimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linha"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"/>
+
+            <View
+                android:id="@+id/linha"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/cafe_manha"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C8C8C8"/>
+
+            <TextView
+                android:id="@+id/textadicionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADICIONAR ALIMENTO"
+                android:layout_below="@+id/container_alimento"
+                android:textSize="21sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#8BC34A"/>
+
+            <View
+                android:id="@+id/linha2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/textadicionar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C8C8C8"/>
+            <TextView
+
+                android:id="@+id/almoço"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linha2"
+                android:layout_marginTop="20dp"
+                android:text="Almoço"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/soma_calorias_cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:layout_marginRight="50dp"/>
+
+            <View
+                android:id="@+id/linha3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/almoço"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C8C8C8"/>
+
+            <TextView
+                android:id="@+id/soma_calorias_almoco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linha2"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/container_alimento2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linha3"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/textadicionar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADICIONAR ALIMENTO"
+                android:layout_below="@+id/container_alimento2"
+                android:textSize="21sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#8BC34A"/>
+
+            <View
+                android:id="@+id/linha4"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/textadicionar2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C8C8C8"/>
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/lanche_tarde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linha4"
+                android:text="Lanche da tarde"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/soma_calorias_lanchetarde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linha4"
+                android:layout_marginRight="50dp"
+                android:text="0"
+                android:textSize="20sp" />
+
+
+
+            <View
+                android:id="@+id/linha5"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/lanche_tarde"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C8C8C8"/>
+
+            <LinearLayout
+                android:id="@+id/container_alimento3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linha5"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/textadicionar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADICIONAR ALIMENTO"
+                android:layout_below="@+id/container_alimento3"
+                android:textSize="21sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#8BC34A"/>
+
+
+
+            <View
+                android:id="@+id/linha6"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/lanche_tarde"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C8C8C8"/>
+
+
+            <View
+                android:id="@+id/linha8"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/textadicionar3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C8C8C8"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/jantar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linha8"
+                android:text="Jantar"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/soma_calorias_noite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linha8"
+                android:layout_marginRight="50dp"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/linha9"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/soma_calorias_noite"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C8C8C8"/>
+
+            <LinearLayout
+                android:id="@+id/container_alimento4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/soma_calorias_noite"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/textadicionar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADICIONAR ALIMENTO"
+                android:layout_below="@+id/container_alimento4"
+                android:textSize="21sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#8BC34A"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

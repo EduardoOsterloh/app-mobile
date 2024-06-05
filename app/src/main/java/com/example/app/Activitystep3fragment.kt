@@ -68,7 +68,7 @@ class Activitystep3fragment: Fragment() {
         })
 
                 finalizar.setOnClickListener {
-                    val intent = Intent(activity, tmb::class.java)
+                    val intent = Intent(activity, UsuarioCadastrado::class.java)
                     startActivity(intent)
                 }
 

@@ -71,7 +71,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/previousButton"
             android:layout_width="180dp"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_centerHorizontal="true"
             android:layout_marginEnd="131dp"
             android:layout_weight="1"
@@ -87,7 +87,7 @@
 
             android:id="@+id/nextButton"
             android:layout_width="180dp"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:text="Próximo"
             android:layout_weight="1"
             android:textColor="@color/white"

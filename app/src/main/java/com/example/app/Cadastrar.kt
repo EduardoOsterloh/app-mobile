@@ -17,7 +17,7 @@ class Cadastrar: AppCompatActivity() {
         setContentView(binding.root)
 
         val inputname = findViewById<EditText>(R.id.inputnome)
-
+        val inputemail = findViewById<EditText>(R.id.inputEmail)
 
         binding.textvoltar.setOnClickListener{
             val voltar = Intent(this,MainActivity::class.java)
@@ -26,8 +26,11 @@ class Cadastrar: AppCompatActivity() {
         }
 
         binding.btnetapa.setOnClickListener {
-            val texto = inputname.text.toString()
-            DataHolder.conteudoNome = texto
+            val name = inputname.text.toString()
+            DataHolder.conteudoNome = name
+            val email = inputemail.text.toString()
+            DataHolder.conteudoEmail = email
+
             val infoGerais = Intent(this, InfoUsuario01::class.java)
             startActivity(infoGerais)
         }

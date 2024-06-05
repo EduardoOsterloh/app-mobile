@@ -24,13 +24,13 @@ class Activitystep1fragment: Fragment() {
         }
         btnganhar.setOnClickListener {
             Toast.makeText(requireContext(), "Ganhar peso selecionado", Toast.LENGTH_SHORT).show()
-            opcaoSelecionada = "Ganhar"
+            opcaoSelecionada = "Ganhar peso"
             DataHolder.conteudo1tela = opcaoSelecionada
 
         }
         btnmanter.setOnClickListener {
             Toast.makeText(requireContext(), "Manter peso selecionado", Toast.LENGTH_SHORT).show()
-            opcaoSelecionada = "Manter"
+            opcaoSelecionada = "Manter peso"
             DataHolder.conteudo1tela = opcaoSelecionada
         }
         return view

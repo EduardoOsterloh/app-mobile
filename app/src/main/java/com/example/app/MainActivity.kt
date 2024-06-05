@@ -20,11 +20,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(telaCadastro)
         }
 
-        binding.entrar.setOnClickListener{
-            val telaCadastrado = Intent(this,UsuarioCadastrado::class.java )
-            startActivity(telaCadastrado)
-
+        binding.entrar.setOnClickListener {
+            val telausuariosenha = Intent(this,usuario_senha::class.java)
+            startActivity(telausuariosenha)
         }
+
+
     }
 }
 

@@ -1,56 +1,84 @@
 
 
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
     <FrameLayout
-        android:id="@+id/wizardContent"
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="670dp"
 
         android:layout_marginBottom="10dp"/>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:background="#8BC34A"
-        android:layout_marginTop="700dp">
+        android:background="#5E636363"
+        android:layout_marginTop="700dp"
+        >
 
 
         <TextView
             android:id="@+id/perfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignParentBottom="true"
             android:textSize="20dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/prato"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/perfil"
 
             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="23dp"
+            />
+
         <TextView
             android:id="@+id/tmb"
             android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/objetivo"
+            android:background="@drawable/alvo"
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
             android:textSize="20dp"
             />
 
         <TextView
-            android:id="@+id/alimentos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:text="Tmb"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="180dp"
+            />
+
+
+        <TextView
+            android:id="@+id/alimentos"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginRight="25dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:textSize="20dp"
-            android:background="@drawable/prato"
+            android:background="@drawable/restaurante"
 
             />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alimentos"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="325dp"
+            />
 
 
     </RelativeLayout>
