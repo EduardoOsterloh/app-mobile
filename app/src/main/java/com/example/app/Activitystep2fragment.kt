@@ -5,13 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import android.widget.Button
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 
-//override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-//        val view = LayoutInflater.from(context).inflate(R.layout.fragment_step1, container, false)
-// val btn_emagrecer = view.findViewById<Button>(R.id.buttonEmagrecer)
 
 class Activitystep2fragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

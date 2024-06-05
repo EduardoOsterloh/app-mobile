@@ -51,8 +51,6 @@ class InfoUsuario01 : AppCompatActivity() {
                 if (currentStep < 3) {
                     currentStep++
                     updateStepIndicators()
-                } else {
-                    // Finalizar ou realizar alguma ação ao terminar o wizard
                 }
             }
         }

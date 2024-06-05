@@ -7,7 +7,6 @@ import android.content.Intent
 import android.widget.Button
 import android.widget.EditText
 
-import android.content.Context
 
 
 class _add_food : AppCompatActivity() {

@@ -88,9 +88,9 @@ class Activitystep3fragment: Fragment() {
                 return view
             }
     private fun setSelectedButton(button: Button) {
-        selectedOption?.setBackgroundResource(R.drawable.nselec) // Desmarcar o botão anteriormente selecionado
-        selectedOption = button // Atualizar o botão selecionado
-        button.setBackgroundResource(R.drawable.selecionado) // Marcar o botão atual como selecionado
+        selectedOption?.setBackgroundResource(R.drawable.nselec)
+        selectedOption = button
+        button.setBackgroundResource(R.drawable.selecionado)
     }}
 
 
